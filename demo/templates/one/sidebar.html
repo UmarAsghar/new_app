@@ -1,0 +1,14 @@
+{% load static %}
+<div class="border border-right border-warning h-auto">
+    <div class='text-center'>
+        <img src="{% static 'one/images/umi.jpg' %} " alt="profile pic" class='img-fluid rounded-circle mt-5' width='100px' height='100px'>
+        <h3 class='text-white mt-2 st-font'>UmAr Asghar</h3>
+    </div>
+    <hr class='border border-light'>
+    <nav class='nav flex-column text-center'>
+        <a href="{% url '' %}" class="nav-link">Home</a>
+        <a href="{% url 'services' %}" class="nav-link">Services</a>
+        <a href="{% url 'skill' %}" class="nav-link">Skill</a>
+        <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+    </nav>
+</div>
